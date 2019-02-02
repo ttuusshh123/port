@@ -1,0 +1,33 @@
+body{
+  text-align: center;
+  background-color: black;
+
+}
+embed{
+  margin: auto;
+}
+img{
+  height: 200px;
+  width: 200px;
+  float: center;
+  border: 2px dotted white;
+  border-radius: 30px;
+}
+.container
+{
+  border: 2px solid white;
+  border-radius: 25px;
+  color: white;
+  background-image: url('back1.jpg');
+  background-repeat: repeat;
+  margin: 5% 20% 20% 20%;
+}
+video{
+  border: 2px solid white;
+  border-radius: 30px;
+}
+.name{
+  border: 2px solid white;
+  margin-left: 38%;
+  margin-right: 38%;
+}

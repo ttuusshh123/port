@@ -1,0 +1,27 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="{% static 'port/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'port/nav.css' %}">
+  </head>
+  <body>
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark  " >
+        <table>
+            <tr>
+                <td><a  href="#"><strong>sign up</strong></a></td>  <br><td class="special"><a href="#"><strong>login</strong></a></td>
+            </tr>
+        </table>
+
+      </nav>
+    </div>
+    {% block content %}
+
+
+
+    {% endblock %}
+  </body>
+</html>

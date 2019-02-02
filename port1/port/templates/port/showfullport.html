@@ -1,0 +1,64 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>portfolio page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="{% static 'port/showfullport.css' %}">
+  </head>
+  <body>
+
+          <div class="container">
+            <img src="{{ bbb.image.url }}" class=" img-fluid" alt="...">
+            <br><br>
+            <div class="name">
+              <strong>Name:</strong><br>
+              {{bbb.firstname}} {{bbb.lastname}}
+              <br><br>
+              <strong>Sex:</strong><br>
+              {{bbb.sex}}
+              <br><br>
+              <strong>DOB:</strong><br>
+              {{bbb.date_of_birth}}
+              <br><br>
+              <strong>12th percentage:</strong><br>
+              {{bbb.tpercentage}}
+              <br><br>
+              <strong>Graduated:</strong><br>
+              {% if bbb.graduated == True %}
+              yes
+              {% endif %}
+              {% if bbb.graduated != True %}
+              no
+              {% endif %}
+              <br><br>
+              <strong>Skills:</strong><br>
+              {% if bbb.skills == Null %}
+                skill is not mentioned
+              {%else %}
+                {{bbb.skills}}
+              {% endif %}
+              <br><br>
+
+              <strong>Specified Skills:</strong><br>
+              {{ bbb.specified_skills }}
+              <br><br>
+            </div>
+
+            <br>
+            <strong>Video:</strong><br>
+            <!-- <video width="320" height="240" controls>
+            <source src="{{ bbb.upload_video.url }}" type="video/mp4">
+            </video> -->
+            <br><br>
+
+            <embed src="{{ bbb.add_cv.url }}" width="400px" height="500px" />
+          </div>
+  </body>
+</html>
+
+
+
+**************************************************************************
